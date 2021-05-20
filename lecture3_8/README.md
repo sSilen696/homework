@@ -9,7 +9,8 @@ InActConn - any other state
 Весит соединение потому что каждое вхождение весит до connection timeout. 
 
 ### 2 Задание  
-! Configuration File for keepalived
+```
+ !Configuration File for keepalived
 global_defs {
    router_id uMASTER
 }
@@ -57,14 +58,11 @@ scripts </opt/scripts/change_ip.sh
 }
 
 /opt/scripts/change_ip.sh  
-;#!/bin/bash  
+#!/bin/bashbash  
 sudo ipvsadm -A -t 172.28.128.200:80 -s rr  
-sudo ipvsadm -A -t 172.28.128.200:80 -s -r 172.28.128.10:80  
-sudo ipvsadm -A -t 172.28.128.200:80 -s -r 172.28.128.10:80 -g -w 1  
-sudo ipvsadm -a -t 172.28.128.200:80 -s -r 172.28.128.10:80 -g -w 1  
 sudo ipvsadm -a -t 172.28.128.200:80 -r 172.28.128.10:80 -g -w 1  
 sudo ipvsadm -a -t 172.28.128.200:80 -r 172.28.128.60:80 -g -w 1  
-
+```
 ###3. Задание
 
 
