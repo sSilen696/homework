@@ -8,4 +8,3 @@
 - elastik для установки elastiksearch
 
 P.S. удачного использования
-

@@ -114,6 +114,3 @@
         dest: /etc/profile.d/kib.sh
         mode: 0644
       tags: kibana
-
-
-
