@@ -1,13 +1,13 @@
 ---
 elasticsearch:
   hosts:
-    localhost:
+    test_vm:
       ansible_connection: ssh
-      ansible_user: root
+      ansible_user: ademin
       ansible_host: 84.201.142.105
 kibana:
   hosts:
-    localhost:
+    test_vm:
       ansible_connection: ssh
-      ansible_user: root
+      ansible_user: ademin
       ansible_host: 84.201.142.105
