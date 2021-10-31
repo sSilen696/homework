@@ -11,3 +11,4 @@ kibana:
       ansible_connection: ssh
       ansible_user: ademin
       ansible_host: 84.201.142.105
+

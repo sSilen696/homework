@@ -6,3 +6,5 @@
 - java для установки java
 - kibana для установки kibana
 - elastik для установки elastiksearch
+
+P.S. удачного использования
