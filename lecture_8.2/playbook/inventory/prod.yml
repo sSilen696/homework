@@ -1,0 +1,13 @@
+---
+elasticsearch:
+  hosts:
+    localhost:
+      ansible_connection: ssh
+      ansible_user: root
+      ansible_host: 84.201.142.105
+kibana:
+  hosts:
+    localhost:
+      ansible_connection: ssh
+      ansible_user: root
+      ansible_host: 84.201.142.105
