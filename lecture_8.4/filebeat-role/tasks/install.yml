@@ -1,0 +1,6 @@
+---
+- name: Install filebeat
+  become: true
+  package:
+    name: "/tmp/filebeat-{{ elk_stack_version }}-x86_64.rpm"
+    state: present
