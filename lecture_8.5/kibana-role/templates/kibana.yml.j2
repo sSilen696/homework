@@ -1,0 +1,4 @@
+
+server.port: 5601
+server.host:  ["{{ ansible_facts['default_ipv4']['address'] }}"]
+elasticsearch.hosts: ["http://localhost:9200"]

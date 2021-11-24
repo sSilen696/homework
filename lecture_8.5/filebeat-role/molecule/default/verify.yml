@@ -1,0 +1,30 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: Example assertion
+    assert:
+      that: true
+- name: "config - retrieve information from path"
+  stat:
+    path: /etc/filebeat/config
+  register: config
+
+- name: "config - assert that file is created correctly"
+  assert:
+    that:
+      - "config.stat.exists"
+- name: "log - retrieve information from path"
+  stat:
+    path: /var/log/filebeat
+  register: log
+
+- name: "log - assert that directory is created correctly"
+  assert:
+    that:
+      - "log.stat.exists"
+      - "log.stat.isdir"
+
